@@ -93,5 +93,7 @@ def min_steps(first, second, target):
     return min(pour(Cup(second, second), Cup(first, 0), target),
                pour(Cup(first, first), Cup(second, 0), target))
 
+
 if __name__ == '__main__':
     print(min_steps(5, 3, 4))
+    assert min_steps(2, 6, 5) == -1

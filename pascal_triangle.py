@@ -43,6 +43,7 @@ def pascal_triangle2(n_rows):
             row.extend([sum(pair) for pair in zip(last_row, last_row[1:])])
             row.append(1)
         ans.append(row)
+    # print(ans)
     print_val(ans)
 
 
